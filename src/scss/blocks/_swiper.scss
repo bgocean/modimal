@@ -1,0 +1,19 @@
+.swiper {
+  width: 100%;
+  padding-bottom: 32px !important;
+}
+
+.swiper-pagination-bullet{
+  width: 14px !important;
+  height: 14px !important;
+  background-color: var(--neutral-grayadadad) !important;
+  opacity: 1 !important;
+}
+
+.swiper-pagination-bullet-active{
+  background-color: var(--neutral-graydfdfdf) !important;
+}
+
+
+// 2.20.45 
+// https://www.youtube.com/watch?v=Us4n_3eUOxs&list=PL1NBhQGGj46agn4Q4urrYh6ruzd2yiARD&index=1

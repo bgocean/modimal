@@ -10,7 +10,16 @@
     <div class="best__cards">
       <!-- @@include('blocks/card.html') -->
 
-      @@loop('blocks/card.html', './data/products.json')
+      <!-- Slider main container -->
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          @@loop('blocks/card.html', './data/products.json')
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+      </div>
     </div>
   </div>
 </section>
