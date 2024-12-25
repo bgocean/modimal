@@ -1,0 +1,16 @@
+.colection {
+    &__title {
+        margin-bottom: 24px;
+    }
+  }
+  
+  
+  .collection {
+    &__cols {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+    }
+    &__col {}
+  }
+  
