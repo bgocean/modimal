@@ -4,8 +4,8 @@
 
   background-color: #999;
   background-image: url("./../../img/hero/hero.jpg");
-  background-position: center center; /* x y */
-  background-size: contain;
+  background-position: center top; /* -x -y  центр по горизонтали, верх по вертикали */
+  background-size: cover;
   background-repeat: no-repeat;
 
   // imageBG

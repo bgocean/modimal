@@ -8,4 +8,10 @@
   letter-spacing: 0.07em;
   text-align: center;
   color: var(--white);
+
+  @include mobile {
+      
+  }
 }
+
+// 4.42.30
