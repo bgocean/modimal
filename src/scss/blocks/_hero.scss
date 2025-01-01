@@ -4,13 +4,18 @@
 
   background-color: #999;
   background-image: url("./../../img/hero/hero.jpg");
-  background-position: center top; /* -x -y  центр по горизонтали, верх по вертикали */
+  background-position: left center; /* -x -y  центр по горизонтали, верх по вертикали */
   background-size: cover;
   background-repeat: no-repeat;
 
   // imageBG
   @include mediaBg() {
     background-image: url("./../../img/hero/hero@2x.jpg");
+  }
+
+  @include mobile {
+    height: 551px;
+    padding-bottom: 16px;
   }
 
   .container {
@@ -25,6 +30,10 @@
   justify-content: flex-end;
   align-items: flex-start;
   gap: 27px;
+
+  @include mobile {
+    gap: 32px;
+  }
 }
 
 .hero__title {
@@ -36,4 +45,8 @@
   line-height: 180%;
   text-transform: capitalize;
   color: var(--black);
+
+  @include mobile {
+    max-width: 168px;
+  }
 }

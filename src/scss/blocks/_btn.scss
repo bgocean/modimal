@@ -15,9 +15,22 @@ a.btn {
   text-align: center;
   color: var(--black);
 
-  &--small{
+  transition: all 0.2s ease-in;
+  
+
+  &:hover {
+    background: var(--neutral-grayededed);
+  }
+
+  @include mobile {
+    padding: 8px 9px;
+    min-width: unset;
+  }
+
+  &--small {
     min-width: unset;
     padding-left: 15px;
     padding-right: 15px;
   }
 }
+// 3.12.22
