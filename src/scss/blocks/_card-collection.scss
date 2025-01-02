@@ -1,10 +1,18 @@
 .card-collection {
   position: relative;
+
   &__img {
   }
+
   &__link {
     position: absolute;
     right: 16px;
     bottom: 16px;
+
+    @include mobile {
+      position: static;
+    }
   }
 }
+
+// 3.27.30
