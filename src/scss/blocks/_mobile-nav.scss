@@ -1,4 +1,5 @@
 .mobile-nav {
+  overflow-y: auto;
   position: fixed;
   // top: 0;
   top: -100%;
@@ -27,20 +28,56 @@
 .mobile-nav__links {
 }
 
-.mobile-links__parent {
+.mobile-links {
+  display: grid;
+  gap: 32px;
+  &__parent {
+    border-bottom: 1px solid var(--black);
+  }
+
+  &__parent-btn {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__parent-title {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 180%;
+    text-transform: capitalize;
+    color: var(--black);
+  }
 }
 
-.mobile-links__parent-btn {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-}
+.mobile-sub-list {
+  display: grid;
+  gap: 16px;
+  // padding: 24px 0 16px 35px;
+  padding: 24px 0 0 35px;
+  // скрываем меню аккордеона
+  max-height: 0px;
+  overflow: hidden;
 
-.mobile-links__parent-title {
-  font-family: var(--font-family);
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 180%;
-  text-transform: capitalize;
-  color: var(--black);
+  &__item {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 180%;
+    text-transform: capitalize;
+    color: var(--neutral-gray404040);
+  }
+
+  &__link {
+    padding-top: 7px;
+    width: 100%;
+    color: var(--neutral-gray404040);
+
+    @media (any-hover: hover) {
+      &:hover {
+        color: #000;
+      }
+    }
+  }
 }
