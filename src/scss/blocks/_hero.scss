@@ -4,7 +4,7 @@
 
   background-color: #999;
   background-image: url("./../../img/hero/hero.jpg");
-  background-position: left center; /* -x -y  центр по горизонтали, верх по вертикали */
+  background-position: 25% top; /* -x -y  центр по горизонтали, верх по вертикали */
   background-size: cover;
   background-repeat: no-repeat;
 
@@ -46,7 +46,12 @@
   text-transform: capitalize;
   color: var(--black);
 
+  @include tablet {
+    max-width: 250px;
+  }
+
   @include mobile {
     max-width: 168px;
+    font-size: 20px;
   }
 }
