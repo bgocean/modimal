@@ -39,11 +39,17 @@
 					<div class="header__account header__account--first">
 						<ul class="account">
 							<li class="account__menu">
-								<a href="#!">
-									<svg class="icon icon--menu">
-										<use href="./img/svgsprite/sprite.symbol.svg#menu"></use>
-									</svg>
-								</a>
+								<!-- <a href="#!">
+              <svg class="icon icon--menu">
+                <use
+                  href="./img/svgsprite/sprite.symbol.svg#menu"
+                ></use>
+              </svg>
+            </a> -->
+
+								<button class="mobile-nav-btn">
+									<div class="nav-icon"></div>
+								</button>
 							</li>
 							<li>
 								<a href="#!">
@@ -89,10 +95,28 @@
 			</div>
 		</header>
 		<div class="mobile-nav">
-			<ul class="mobile-nav__list">
-				<li><a href="index.html">Главная</a></li>
-				<li><a href="docs.html">Документация</a></li>
-			</ul>
+			<div class="mobile-nav__links">
+				<ul class="mobile-links">
+					<li class="mobile-links__parent">
+						<button mobile-links__parent-btn>
+							<span class="mobile-links__parent-title">
+								collection
+							</span>
+
+							<svg class="icon icon--arrow-down">
+								<use href="./img/svgsprite/sprite.symbol.svg#arrow-down"></use>
+							</svg>
+						</button>
+					</li>
+				</ul>
+			</div>
+
+			<div class="mobile-nav__btns"></div>
+
+			<!-- <ul class="mobile-nav__list">
+		<li><a href="index.html">Главная</a></li>
+		<li><a href="docs.html">Документация</a></li>
+	</ul> -->
 		</div>
 
 		<main class="main">
