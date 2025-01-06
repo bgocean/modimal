@@ -26,6 +26,7 @@
 }
 
 .mobile-nav__links {
+  margin-bottom: 84px;
 }
 
 .mobile-links {
@@ -93,4 +94,14 @@
       }
     }
   }
+}
+
+.mobile-nav__btns {
+  margin-top: auto;
+  border-top: 1px solid var(--neutral-graycbcbcb);
+  padding-top: 14px;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
 }
