@@ -51,14 +51,27 @@
   }
 }
 
+.mobile-links__parent-btn__icon {
+  transition: all 0.2s ease-in;
+}
+
+.active .mobile-links__parent-btn__icon {
+  transform: rotate(-180deg);
+}
+
+.mobile-sub {
+  // скрываем меню аккордеона
+  max-height: 0px;
+  overflow: hidden;
+
+  transition: all 0.2s ease-in;
+}
+
 .mobile-sub-list {
   display: grid;
   gap: 16px;
   // padding: 24px 0 16px 35px;
   padding: 24px 0 0 35px;
-  // скрываем меню аккордеона
-  max-height: 0px;
-  overflow: hidden;
 
   &__item {
     font-family: var(--font-family);
