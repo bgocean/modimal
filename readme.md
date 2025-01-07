@@ -21,4 +21,11 @@ gulp
 gulp docs
 ```
 
-[Смотреть демо](https://user.github.io/repo/)
+## Вёрстка главной страницы магазина modimal на Gulp сборке
+Технологии:
+- HTML,
+- SCSS,
+- Gulp,
+- JS
+
+[Смотреть демо](https://bgocean.github.io/modimal/)
